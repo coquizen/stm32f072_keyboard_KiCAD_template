@@ -188,17 +188,6 @@ F 3 "~" H 5750 1590 50  0001 C CNN
 	1    5750 1590
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5D6E841B
-P 6255 1590
-F 0 "#PWR?" H 6255 1440 50  0001 C CNN
-F 1 "+5V" H 6269 1759 50  0000 C CNN
-F 2 "" H 6255 1590 50  0001 C CNN
-F 3 "" H 6255 1590 50  0001 C CNN
-	1    6255 1590
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5545 1590 5750 1590
 Wire Wire Line
@@ -879,28 +868,6 @@ Wire Notes Line style solid
 	2870 4270 5750 4270
 Wire Notes Line style solid
 	2870 6140 5750 6140
-$Comp
-L Device:R_Small R?
-U 1 1 5D734F48
-P 5367 4865
-F 0 "R?" V 5171 4865 50  0000 C CNN
-F 1 "22" V 5262 4865 50  0000 C CNN
-F 2 "" H 5367 4865 50  0001 C CNN
-F 3 "~" H 5367 4865 50  0001 C CNN
-	1    5367 4865
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5D734F49
-P 5365 5465
-F 0 "R?" V 5169 5465 50  0000 C CNN
-F 1 "22" V 5260 5465 50  0000 C CNN
-F 2 "" H 5365 5465 50  0001 C CNN
-F 3 "~" H 5365 5465 50  0001 C CNN
-	1    5365 5465
-	0    1    1    0   
-$EndComp
 Text Notes 3020 5980 0    50   ~ 0
 ESD Protection Circuit
 Text GLabel 3300 5465 0    50   BiDi ~ 0
@@ -917,10 +884,6 @@ Text GLabel 5570 5465 2    50   BiDi ~ 0
 D-
 Wire Wire Line
 	4670 5465 5265 5465
-Wire Wire Line
-	5570 5465 5465 5465
-Wire Wire Line
-	5467 4865 5566 4865
 Wire Wire Line
 	4670 4865 5267 4865
 Text GLabel 5510 5165 2    50   Input ~ 0
@@ -942,4 +905,18 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 $EndComp
 Text GLabel 9910 5240 2    50   BiDi ~ 0
 D+
+Wire Wire Line
+	5265 5465 5265 5464
+Wire Wire Line
+	5265 5465 5570 5465
+Connection ~ 5265 5465
+Connection ~ 5265 5464
+Wire Wire Line
+	5267 4865 5267 4866
+Wire Wire Line
+	5267 4865 5566 4865
+Connection ~ 5267 4865
+Connection ~ 5267 4866
+Text GLabel 6255 1590 2    50   Input ~ 0
+VBUS
 $EndSCHEMATC

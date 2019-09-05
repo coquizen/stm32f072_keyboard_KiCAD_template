@@ -22,14 +22,6 @@ Wire Wire Line
 	4720 2590 4720 2690
 Wire Wire Line
 	4170 1990 4045 1990
-Wire Wire Line
-	5170 2515 5095 2515
-Connection ~ 5020 2140
-Wire Wire Line
-	5020 2140 6545 2140
-Connection ~ 6070 1965
-Wire Wire Line
-	6070 1965 6545 1965
 NoConn ~ 4045 1690
 NoConn ~ 4045 2290
 Text GLabel 6545 1965 2    50   BiDi ~ 0
@@ -40,8 +32,6 @@ Connection ~ 4720 2590
 Connection ~ 4895 1590
 Wire Wire Line
 	5095 3190 5095 3440
-Wire Wire Line
-	5770 2515 5920 2515
 Wire Wire Line
 	4045 2190 4170 2190
 Wire Wire Line
@@ -65,9 +55,6 @@ Wire Notes Line style solid
 	2870 4090 7345 4090
 Wire Notes Line style solid
 	2870 940  2870 4090
-Connection ~ 5095 3190
-Wire Wire Line
-	5095 2515 5095 3190
 Wire Wire Line
 	4045 2090 4295 2090
 $Comp
@@ -111,33 +98,12 @@ Wire Wire Line
 	4295 1965 4295 2090
 Connection ~ 4295 1965
 Wire Wire Line
-	6070 2615 5770 2615
-Wire Wire Line
-	6070 1965 6070 2615
-Wire Wire Line
-	4295 1965 6070 1965
-Wire Wire Line
 	4170 2140 4170 2190
 Connection ~ 4170 2140
-Wire Wire Line
-	5020 2615 5170 2615
-Wire Wire Line
-	4170 2140 5020 2140
 Wire Wire Line
 	4295 1890 4295 1965
 Wire Wire Line
 	4170 1990 4170 2140
-$Comp
-L random-keyboard-parts:PRTR5V0U2X U?
-U 1 1 5D6E8416
-P 5470 2565
-F 0 "U?" H 5470 2852 60  0000 C CNN
-F 1 "PRTR5V0U2X" H 5470 2751 60  0000 C CNN
-F 2 "random-keyboard-parts:SOT143B" H 5470 2565 60  0001 C CNN
-F 3 "" H 5470 2565 60  0001 C CNN
-	1    5470 2565
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 5D6E8417
@@ -188,22 +154,8 @@ F 3 "~" H 5750 1590 50  0001 C CNN
 	1    5750 1590
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5D6E841B
-P 6255 1590
-F 0 "#PWR?" H 6255 1440 50  0001 C CNN
-F 1 "+5V" H 6269 1759 50  0000 C CNN
-F 2 "" H 6255 1590 50  0001 C CNN
-F 3 "" H 6255 1590 50  0001 C CNN
-	1    6255 1590
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5545 1590 5750 1590
-Wire Wire Line
-	5750 1590 6255 1590
-Connection ~ 5750 1590
 Wire Wire Line
 	5095 3575 5095 3440
 Connection ~ 5095 3440
@@ -211,19 +163,6 @@ Wire Wire Line
 	4570 3190 4895 3190
 Wire Wire Line
 	4445 3440 4895 3440
-Wire Wire Line
-	5020 2140 5020 2615
-$Comp
-L power:+3.3V #PWR?
-U 1 1 5D6E841C
-P 5920 2515
-F 0 "#PWR?" H 5920 2365 50  0001 C CNN
-F 1 "+3.3V" H 5934 2687 50  0000 C CNN
-F 2 "" H 5920 2515 50  0001 C CNN
-F 3 "" H 5920 2515 50  0001 C CNN
-	1    5920 2515
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4895 1590 5170 1590
 $Comp
@@ -269,7 +208,7 @@ L Device:C_Small C?
 U 1 1 5D6EC7EC
 P 1295 1865
 F 0 "C?" H 1387 1908 50  0000 L CNN
-F 1 "1uF" H 1387 1822 50  0000 L CNN
+F 1 "4.7uF" H 1387 1822 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1295 1865 50  0001 C CNN
 F 3 "~" H 1295 1865 50  0001 C CNN
 	1    1295 1865
@@ -813,28 +752,6 @@ F3 "ROW0" I L 7040 5450 50
 F4 "COL1" I R 7620 5610 50 
 F5 "ROW1" I L 7040 5610 50 
 $EndSheet
-$Comp
-L Device:C_Small C?
-U 1 1 5D734F44
-P 4920 5265
-F 0 "C?" H 5012 5311 50  0000 L CNN
-F 1 "4.7nF" H 5012 5220 50  0000 L CNN
-F 2 "" H 4920 5265 50  0001 C CNN
-F 3 "~" H 4920 5265 50  0001 C CNN
-	1    4920 5265
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D734F45
-P 4920 5365
-F 0 "#PWR?" H 4920 5115 50  0001 C CNN
-F 1 "GND" H 4924 5194 50  0000 C CNN
-F 2 "" H 4920 5365 50  0001 C CNN
-F 3 "" H 4920 5365 50  0001 C CNN
-	1    4920 5365
-	1    0    0    -1  
-$EndComp
 Text GLabel 3300 4865 0    50   BiDi ~ 0
 D-BUS
 $Comp
@@ -868,9 +785,6 @@ F 3 "" H 3300 5165 50  0001 C CNN
 	1    3300 5165
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4670 5165 4920 5165
-Connection ~ 4920 5165
 Wire Notes Line style solid
 	5750 4270 5750 6140
 Wire Notes Line style solid
@@ -897,10 +811,6 @@ Wire Wire Line
 	4670 5465 5265 5465
 Wire Wire Line
 	4670 4865 5267 4865
-Text GLabel 5510 5165 2    50   Input ~ 0
-VBUS
-Wire Wire Line
-	4920 5165 5510 5165
 Text GLabel 9910 5140 2    50   BiDi ~ 0
 D-
 $Comp
@@ -928,4 +838,35 @@ Wire Wire Line
 	5267 4865 5566 4865
 Connection ~ 5267 4865
 Connection ~ 5267 4866
+Connection ~ 5750 1590
+Wire Wire Line
+	5750 1590 6255 1590
+$Comp
+L power:+5V #PWR?
+U 1 1 5D715065
+P 6255 1590
+F 0 "#PWR?" H 6255 1440 50  0001 C CNN
+F 1 "+5V" H 6269 1762 50  0000 C CNN
+F 2 "" H 6255 1590 50  0001 C CNN
+F 3 "" H 6255 1590 50  0001 C CNN
+	1    6255 1590
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4295 1965 6545 1965
+Wire Wire Line
+	4170 2140 6545 2140
+Wire Wire Line
+	4670 5165 5510 5165
+$Comp
+L power:VCC #PWR?
+U 1 1 5D715BBF
+P 5510 5165
+F 0 "#PWR?" H 5510 5015 50  0001 C CNN
+F 1 "VCC" H 5527 5337 50  0000 C CNN
+F 2 "" H 5510 5165 50  0001 C CNN
+F 3 "" H 5510 5165 50  0001 C CNN
+	1    5510 5165
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
