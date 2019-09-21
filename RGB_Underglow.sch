@@ -1,4 +1,5 @@
 EESchema Schematic File Version 5
+LIBS:Mechanical_Keyboard_STM32F0_Template-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -12,6 +13,11 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
 Connection ~ 6860 1400
 Wire Wire Line
@@ -310,4 +316,6 @@ $EndComp
 Connection ~ 6360 1400
 Wire Wire Line
 	2110 1660 2110 2270
+Text Notes 7047 6855 0    50   ~ 10
+NOTE: If using WS2814B(v.3), filtering capacitors will not be needed.
 $EndSCHEMATC

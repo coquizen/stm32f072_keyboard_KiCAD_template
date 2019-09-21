@@ -1,4 +1,5 @@
 EESchema Schematic File Version 5
+LIBS:Mechanical_Keyboard_STM32F0_Template-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -12,6 +13,11 @@ Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
 Connection ~ 2320 1800
 Text HLabel 2320 1450 1    50   Input ~ 0
